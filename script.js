@@ -1,15 +1,18 @@
 const input =(n)=>{
-          var inputId = document.getElementById("inputId");
+          let inputId = document.getElementById("inputId");
           inputId.value += n;
 }
 
 const clearInput =()=>{
-          var inputId = document.getElementById("inputId");
-          inputId.value="";
+          let textId = document.getElementById("inputId");
+          textId.value= "";
 }
 
-const equal=()=>{
-          var inputId = document.getElementById("inputId");
-          let result = eval(inputId.value);
-          inputId.value = result;        
+const equal=()=>{ 
+          let inpId = document.getElementById("inputId");
+          if(!inpId.value==""){
+                    let result = eval(inpId.value);
+                    inpId.value = result;  
+          }
+    
 }
